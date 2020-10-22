@@ -1,0 +1,47 @@
+.button {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid black;
+  cursor: pointer;
+  outline: none;
+
+  &:hover{
+    color: #ffc900;
+  }
+
+  &:active{
+    color: #302b2b;
+  }
+
+  &-login{
+    border: 1px solid #ffc900;
+    color: #ffc900;
+    padding: 5px 15px;
+    border-radius: 2px;
+
+    &:hover{
+      color: #ffe000;
+    }
+
+    &:active{
+      color: #302b2b;
+    }
+  }
+
+  &-sign{
+    background-color: #ffc900;
+    color: black;
+    font-weight: 500;
+    padding: 5px 8px;
+    border-radius: 2px;
+
+    &:hover{
+      background-color: #f1be02;
+      color: black;
+    }
+
+    &:active{
+      color: #ffc900;
+    }
+  }
+}
