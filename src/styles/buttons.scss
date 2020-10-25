@@ -4,6 +4,11 @@
   border: 1px solid black;
   cursor: pointer;
   outline: none;
+  height: 38px;
+
+  @media (max-width: 765px) {
+    height: 28px;
+  }
 
   &:hover{
     color: #ffc900;

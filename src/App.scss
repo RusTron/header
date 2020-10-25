@@ -1,7 +1,12 @@
 @import './styles/buttons.scss';
+@import './styles/select.scss';
+@import './styles/burger.scss';
+@import './styles/mobile_nav.scss';
+
 
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -40,16 +45,20 @@
   padding: 10px 0;
   display: flex;
   width: 100%;
+  flex-direction: column;
+
+  & > div {
+    display: none;
+  }
 }
 
 .menu{
-  width: 100%;
-  margin: 0;
+  width: auto;
+  padding-right: 20px;
   display: grid;
   grid-template-columns: 1fr repeat(2, 35px) 50px repeat(2, 80px);
   list-style: none;
   grid-gap: 20px;
-  padding-right: 30px;
   position: relative;
   z-index: 1;
   background-color: black;
@@ -61,7 +70,8 @@
   &__item {
     justify-self: start;
     align-self: center;
-    position: static;
+    position: relative;
+    z-index: 1;
   }
 
   &__logo {
@@ -76,72 +86,14 @@
   }
 }
 
-.selector {
-  position: absolute;
-  top: 0;
-  width: 80px;
-  display: flex;
-  flex-direction: column;
-  transition: 0.5s;
-  max-height: 100em;
-  z-index: -5;
-
-  &__hidden {
-    max-height: 0em;
-    transition: 1s;
-
-    & > div {
-      display: none;
-    }
-  }
-
-  &-button {
-    position: relative;
-    display: block;
-    width: 100%;
-    border: none;
-    height: 20px;
-    background-color: black;
-    color: #fff;
-    z-index: -5;
-
-    &:hover {
-      background-color: #fff;
-      color: #000;
-    }
-  }
-}
-
-.burger {
-  display: none;
-}
-
 @media (max-width: 992px) {
   .number {
     display: none;
   }
-  
-  .burger {
-    display: inline-block;
-    animation: spin 300ms;
-  }
-
-  .close-image {
-    
-    transform: rotate(180deg);
-  }
-
-  .burger-image {
-    transform: rotate(180deg);
-  }
 }
 
-@keyframes spin {
-  0% {
-      transform: rotate(0deg);
-  }
-  
-  100% {
-      transform: rotate(180deg);
+@media (max-width: 765px) {
+  .nav{
+    padding-top: 0;
   }
 }
