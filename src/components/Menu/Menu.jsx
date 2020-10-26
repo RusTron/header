@@ -9,7 +9,8 @@ export const Menu = ({
   openedMenu,
   setOpenedMenu,
   setActiveButton,
-  activeButton  
+  activeButton,
+  setActiveField
 }) => {
 
   return(
@@ -86,7 +87,12 @@ export const Menu = ({
       </li>
       <li 
         className={classNames("burger", {"open": openedMenu})}
-        onClick={()=>setOpenedMenu(!openedMenu)}
+        onClick={()=> {
+          setOpenedMenu(!openedMenu);
+          if (!openedMenu) {
+            setActiveField('')
+          }
+        }}
       >
         <span></span>
         <span></span>

@@ -24,6 +24,10 @@
     padding: 5px 15px;
     border-radius: 2px;
 
+    @media (max-width: 450px) {
+      font-size: 11px;
+    }
+
     &:hover{
       color: #ffe000;
     }
@@ -39,6 +43,10 @@
     font-weight: 500;
     padding: 5px 8px;
     border-radius: 2px;
+
+    @media (max-width: 450px) {
+      font-size: 11px;
+    }
 
     &:hover{
       background-color: #f1be02;

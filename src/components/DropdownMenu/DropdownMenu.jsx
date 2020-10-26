@@ -3,9 +3,7 @@ import { SELECT } from '../../vars';
 import classNames from 'classnames';
 import { FacebookOutlined, TwitterOutlined, LinkedinOutlined } from '@ant-design/icons';
 
-export const DropdownMenu = ({openedMenu}) => {
-  const [activeField, setActiveField] = useState('');
-
+export const DropdownMenu = ({openedMenu, activeField, setActiveField}) => {
   return (
     <div className={openedMenu ? "nav__bottom-visible" : "nav__bottom-closed"}>
       <div 
