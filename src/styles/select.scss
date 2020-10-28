@@ -1,0 +1,105 @@
+.css-2b097c-container{
+  background-color: black;
+}
+
+.css-yk16xz-control{
+  background-color: black !important;
+  border: none !important;
+}
+
+.css-1hb7zxy-IndicatorsContainer{
+
+  & input {
+    display: none !important;
+  }
+}
+
+.css-g1d714-ValueContainer{
+  display: none !important;
+}
+
+.css-tlfecz-indicatorContainer{
+  cursor: pointer;
+
+  & > svg {
+    display: none;
+  }
+
+  &:before {
+    position: relative;
+    top: 4px;
+    color: #fff;
+    font-size: 14px;
+  }
+}
+
+.select-one .css-tlfecz-indicatorContainer{
+
+  &:before {
+    content: 'One';
+  }
+}
+
+.select-two .css-tlfecz-indicatorContainer{
+
+  &:before {
+    content: 'Two';
+  }
+}
+
+.select-three .css-tlfecz-indicatorContainer{
+
+  &:before {
+    content: 'Three';
+  }
+}
+
+.css-1okebmr-indicatorSeparator{
+  display: none;
+}
+
+
+.css-26l3qy-menu > div{
+  background-color: black;
+  border: none;
+  width: 70px;
+
+  & > div {
+    font-size: 14px;
+    width: 70px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: #fff !important;
+      color: #000;
+    }
+
+    &:focus{
+      background-color: #fff !important;
+      color: #000;
+    }
+  }
+
+  & > .css-1n7v3ny-option{
+    background-color: inherit !important;
+  }
+
+  & > .css-9gakcf-option{
+    background-color: inherit;
+    color: #ffc900;
+  }
+}
+
+.css-1hwfws3{
+  display: none !important;
+}
+
+.css-te8i3u-menu{
+  display: none;
+}
+
+.number-active{
+  .css-te8i3u-menu{
+    display: inline-block;
+  }
+}
